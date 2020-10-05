@@ -1,0 +1,96 @@
+.list__prioritet {
+  width: 100%;
+
+  @include for-size(tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
+}
+
+.prioritet__flexbox {
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.list .list__prioritet::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.list--icon-antenna::before {
+  background-image: url(../images/icons/i-antenna.svg);
+}
+
+.list--icon-clock::before {
+  background-image: url(../images/icons/i-clock.svg);
+}
+
+.list--icon-diagram::before {
+  background-image: url(../images/icons/i-diagram.svg);
+}
+
+.list--icon-astronaut::before {
+  background-image: url(../images/icons/i-astronaut.svg);
+}
+
+.list .content-box {
+  margin-right: 0;
+  margin-bottom: 0;
+
+  @include for-size(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include for-size(tablet) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @include for-size(tablet-only) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.list.content-box {
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.list .list__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list .list__title {
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
+}

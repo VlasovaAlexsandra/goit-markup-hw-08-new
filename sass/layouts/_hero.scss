@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $bgr-hero;
+  background-image: 
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/mobile/studio/hero-mobile@1x.png);
+    // url(../images/hero-fon.jpg);
+  background-image: -webkit-image-set(
+    url(../images/mobile/studio/hero-mobile@2x.png) 2x);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+    @include for-size(tablet) {
+      background-image: url(../images/tablet/studio/hero-tablet@1x.png);
+      background-image: -webkit-image-set(
+        url(../images/tablet/studio/hero-tablet@2x.png) 2x);
+    }
+    @include for-size(desktop) {
+      background-image: url(../images/desktop/studio/hero-desktop@1x.png);
+      background-image: -webkit-image-set(
+        url(../images/desktop/studio/hero-desktop@2x.png) 2x);
+      height: 600px;
+    }
+}
+
+// .hero {
+//   display: block;
+//   width: 100%;
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   background-size: cover;
+//   background-image: url(../images/mobile/studio/hero-mobile@1x.png);
+//   background-image: -webkit-image-set(
+//     url("../images/mobile/studio/hero-mobile@2x.png") 2x,
+//     url("../images/mobile/studio/hero-mobile@3x.png") 3x
+//   );
+//   height: 400px;
+
+//   @include for-size("tablet") {
+//     background-image: url(../images/tablet/studio/hero-tablet@1x.png);
+//     background-image: -webkit-image-set(
+//       url("../images/tablet/studio/hero-tablet@2x.png") 2x,
+//       url("../images/tablet/studio/hero-tablet@3x.png") 3x
+//     );
+//   }
+//   @include for-size("desktop") {
+//     background-image: url(../images/desktop/studio/hero-desktop@1x.png);
+//     background-image: -webkit-image-set(
+//       url("../images/desktop/studio/hero-desktop@2x.png") 2x,
+//       url("../images/desktop/studio/hero-desktop@3x.png") 3x
+//     );
+//     height: 600px;
+//   }
+
+.hero-wrap {
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(desktop) {
+    max-width: 696px;
+  }
+}
+
+.hero__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: $hero-text-color;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

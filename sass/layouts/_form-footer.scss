@@ -1,0 +1,55 @@
+.form-section {
+  @include for-size(mobile) {
+    width: 100%;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 93px;
+  }
+}
+
+.form-footer {
+  @include for-size(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include for-size(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form-footer__field {
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid rgba(190, 172, 172, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 12px;
+  height: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-footer__btn {
+  @include for-size(mobile) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.form-footer__button {
+  display: inline-flex;
+
+  @include for-size(desktop) {
+    margin-left: 12px;
+  }
+}
+
+.form-footer__icon {
+  margin-left: 10px;
+}

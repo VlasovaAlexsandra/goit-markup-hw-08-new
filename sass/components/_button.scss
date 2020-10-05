@@ -1,0 +1,73 @@
+.btn {
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.btn__flexbox {
+  display: flex;
+
+  @include for-size(mobile-only) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.btn-flex__item {
+  margin-right: 8px;
+  
+  @include for-size(mobile-only) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  background-color: $accent-text-color;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button.primary:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn .button.primary {
+  padding: 6px 22px;
+
+  background-color: $button-bg-color;
+  color: $button-text-color;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  transition: $transition-background-color;
+}
+
+.btn .button.primary:hover,
+.btn .button.primary:focus {
+  background-color: $accent-text-color;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: $transition-background-color;
+}
+
+.header__btn.primary {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+  width: 200px;
+}

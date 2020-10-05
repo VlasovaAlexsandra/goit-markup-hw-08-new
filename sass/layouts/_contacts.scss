@@ -1,0 +1,47 @@
+.contacts-item {    
+    margin-left: auto;
+}
+
+.contacts {    
+    // @include for-size(tablet) {
+    //     flex-wrap: wrap;
+    // }  
+    
+    @include for-size(desktop) {
+        display: flex;
+    }  
+}
+
+.contacts__link {
+    color: $title-text-color;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+
+    transition: $transition-color;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    color: $accent-text-color;   
+    transition: $transition-color;
+}
+
+.icon-container .contact-icon {    
+    margin-right: 10px;
+    fill: #757575;
+    transition: $transition-fill;
+}
+
+.contacts__icon:hover .contact-icon,
+.contacts__icon:focus .contact-icon {
+    fill: $accent-text-color;
+    transition: $transition-fill;
+}

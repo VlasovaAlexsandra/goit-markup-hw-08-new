@@ -1,0 +1,42 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-btn {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
+.section.no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    @include for-size(mobile-only) {
+        display: none;
+    }
+
+    @include for-size(tablet-only) {
+        display: none;
+    }
+}
+
+.section__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em; 
+}
+
+.entry-title {
+    display: none;
+}
+
+.proff__content-box:not(:last-child) {
+    margin-right: 30px;
+}

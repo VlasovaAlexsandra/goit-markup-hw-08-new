@@ -1,0 +1,117 @@
+.site-nav.list {
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+        display: none;
+      }
+}
+
+.contacts-item {
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+        display: none;
+      }
+}
+
+.navigation {
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;   
+    flex-grow: 1;
+}
+
+.site-nav {
+    display: flex;   
+}
+
+.menu-container .menu-nav {
+    margin-bottom: 60px;
+}
+
+.contact__item {
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+
+    @include for-size(desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;    
+        }
+    }
+}
+
+.contact__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        // @include for-size(tablet) {
+        //     margin-left: 70px;      
+        // }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;    
+        }
+    }
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 0;
+
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @include for-size(tablet) {
+        margin-right: 50px;   
+    } 
+}
+
+.site-nav__link {
+    color: $title-text-color;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+
+    transition: $transition-color;
+}
+
+.site-nav .site-nav__link:hover, 
+.site-nav .site-nav__link:focus {
+    color: $accent-text-color;
+    transition: $transition-color;
+}
+
+.site-nav .site-nav__link.current {
+    color: $accent-text-color;
+}
+
+.menu-nav .site-nav__link:hover, 
+.menu-nav .site-nav__link:focus {
+    color: $accent-text-color;
+    transition: $transition-color;
+}
+
+.menu-nav .site-nav__link.current {
+    color: $accent-text-color;
+}
+
+.site-nav__border {
+    position: relative;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-text-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        bottom: -39px;
+    }
+
+    @include for-size(desktop) {
+        bottom: -32px;
+    }
+}

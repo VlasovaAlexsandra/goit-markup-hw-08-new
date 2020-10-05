@@ -1,0 +1,12 @@
+.page-header {
+    position: relative;
+    
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    background-color: $header-bg-color;     
+}
+
+.page-header--border {
+    border-bottom: 2px solid #ECECEC;
+}
