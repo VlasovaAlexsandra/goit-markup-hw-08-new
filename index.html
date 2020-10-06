@@ -136,33 +136,57 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="proff list flexbox">
             <li class="img proff__content-box list__thumb">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/tablet_coding@1x.png 1x,
-                  ./images/desktop/studio/tablet_coding@2x.png 2x" 
-                  media="(min-width: 1200px)"/> 
-                <img src="./images/box-1.jpg" alt="примеры работ" width="370"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/tablet_coding@1x.png 1x,
+                    ./images/desktop/studio/tablet_coding@2x.png 2x,
+                    ./images/desktop/studio/tablet_coding@3x.png 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="works__image"
+                  src="./images/desktop/studio/tablet_coding@3x.png"
+                  alt="Планшет на якому редагують код"
+                />
               </picture>
               
               <p class="list__label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="img proff__content-box list__thumb">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/smart_model@1x.png 1x,
-                  ./images/desktop/studio/smart_model@2x.png 2x"
-                  media="(min-width: 1200px)"/>
-                <img src="./images/box-2.png" alt="примеры работ" width="370"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/smart_model@1x.png 1x,
+                    ./images/desktop/studio/smart_model@2x.png 2x,
+                    ./images/desktop/studio/smart_model@3x.png 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="works__image"
+                  src="./images/desktop/studio/smart_model@1x.png"
+                  alt="Макет програми на дисплеї ноутбука"
+                />
               </picture>
               <p class="list__label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="img proff__content-box list__thumb">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/color_schema@1x.png 1x,
-                  ./images/desktop/studio/color_schema@2x.png 2x"
-                  media="(min-width: 1200px)"/>
-                <img src="./images/box-3.png" alt="примеры работ" width="370"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/color_schema@1x.png 1x,
+                    ./images/desktop/studio/color_schema@2x.png 2x,
+                    ./images/desktop/studio/color_schema@3x.png 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="works__image"
+                  src="./images/desktop/studio/color_schema@1x.png"
+                  alt="Схема основних кольорів на планшеті"
+                />
               </picture>
               <p class="list__label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
@@ -176,25 +200,37 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list comand__flexbox">
             <li class="img content-box list__comands margin-mobile">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/ihor-desktop@1x.jpg 1x,
-                  ./images/desktop/studio/ihor-desktop@2x.jpg 2x"
-                  media="(min-width: 1200px)"> 
-                </sourse> 
-                <sourse srcset="
-                  ./images/tablet/studio/ihor-tablet@1x.png 1x,
-                  ./images/tablet/studio/ihor-tablet@2x.png 2x"
-                  media="(min-width: 768px)"> 
-                </sourse>
-                <sourse srcset="
-                  ./images/mobile/studio/ihor-mobile@1x.png 1x,
-                  ./images/mobile/studio/ihor-mobile@2x.png 2x"
-                  media="(max-width: 768px)"> 
-                </sourse>
-                <img src="./images/img-1.jpg" alt="участник команды"/>
-              </picture>
-              
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/desktop/studio/ihor-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/ihor-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/ihor-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/ihor-tablet@1x.png 1x,
+                    ./images/tablet/studio/ihor-tablet@2x.png 2x,
+                    ./images/tablet/studio/ihor-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/ihor-mobile@1x.png 1x,
+                    ./images/mobile/studio/ihor-mobile@2x.png 2x,
+                    ./images/mobile/studio/ihor-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/ihor-desktop@1x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>             
               <h3 class="list__staff-title">Игорь Демьяненко</h3>
               <p lang="en" class="staff__text">Product Designer</p>
               <ul class="list staff__social-icons flexbox">
@@ -229,24 +265,37 @@
               </ul>
             </li>
             <li class="img content-box list__comands">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/olha-desktop@1x.jpg 1x,
-                  ./images/desktop/studio/olha-desktop@2x.jpg 2x"
-                  media="(min-width: 1200px)"> 
-                </sourse> 
-                <sourse srcset="
-                  ./images/tablet/studio/olha-tablet@1x.png 1x,
-                  ./images/tablet/studio/olha-tablet@2x.png 2x"
-                  media="(min-width: 768px)"> 
-                </sourse>
-                <sourse srcset="
-                  ./images/mobile/studio/olha-mobile@1x.png 1x,
-                  ./images/mobile/studio/olha-mobile@2x.png 2x"
-                  media="(max-width: 768px)"> 
-                </sourse>
-                <img src="./images/img-2.jpg" alt="участник команды"/>
-              </picture> 
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/desktop/studio/olha-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/olha-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/olha-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/olha-tablet@1x.png 1x,
+                    ./images/tablet/studio/olha-tablet@2x.png 2x,
+                    ./images/tablet/studio/olha-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/olha-mobile@1x.png 1x,
+                    ./images/mobile/studio/olha-mobile@2x.png 2x,
+                    ./images/mobile/studio/olha-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/olha-desktop@1x.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <h3 class="list__staff-title">Ольга Репина</h3>
               <p lang="en" class="staff__text">Frontend Developer</p>
               <ul class="list staff__social-icons flexbox">
@@ -281,23 +330,36 @@
               </ul>
             </li>
             <li class="img content-box list__comands">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/nikola-desktop@1x.jpg 1x,
-                  ./images/desktop/studio/nikola-desktop@2x.jpg 2x"
-                  media="(min-width: 1200px)"> 
-                </sourse> 
-                <sourse srcset="
-                  ./images/tablet/studio/nikola-tablet@1x.png 1x,
-                  ./images/tablet/studio/nikola-tablet@2x.png 2x"
-                  media="(min-width: 768px)"> 
-                </sourse>
-                <sourse srcset="
-                  ./images/mobile/studio/nikola-mobile@1x.png 1x,
-                  ./images/mobile/studio/nikola-mobile@2x.png 2x"
-                  media="(max-width: 768px)"> 
-                </sourse>
-                <img src="./images/img-3.jpg" alt="участник команды"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/nikola-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/nikola-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/nikola-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/nikola-tablet@1x.png 1x,
+                    ./images/tablet/studio/nikola-tablet@2x.png 2x,
+                    ./images/tablet/studio/nikola-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/nikola-mobile@1x.png 1x,
+                    ./images/mobile/studio/nikola-mobile@2x.png 2x,
+                    ./images/mobile/studio/nikola-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/nikola-desktop@1x.jpg"
+                  alt="Николай Тарасов"
+                />
               </picture>
               <h3 class="list__staff-title">Николай Тарасов</h3>
               <p lang="en" class="staff__text">Marketing</p>
@@ -333,23 +395,36 @@
               </ul>
             </li>
             <li class="img content-box list__comands">
-              <picture> 
-                <sourse srcset="
-                  ./images/desktop/studio/michail-desktop@1x.jpg 1x,
-                  ./images/desktop/studio/michail-desktop@2x.jpg 2x"
-                  media="(min-width: 1200px)"> 
-                </sourse> 
-                <sourse srcset="
-                  ./images/tablet/studio/michail-tablet@1x.png 1x,
-                  ./images/tablet/studio/michail-tablet@2x.png 2x"
-                  media="(min-width: 768px)"> 
-                </sourse>
-                <sourse srcset="
-                  ./images/mobile/studio/michail-mobile@1x.png 1x,
-                  ./images/mobile/studio/michail-mobile@2x.png 2x"
-                  media="(max-width: 768px)"> 
-                </sourse>
-                <img src="./images/img-4.jpg" alt="участник команды"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/michail-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/michail-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/michail-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/michail-tablet@1x.png 1x,
+                    ./images/tablet/studio/michail-tablet@2x.png 2x,
+                    ./images/tablet/studio/michail-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/michail-mobile@1x.png 1x,
+                    ./images/mobile/studio/michail-mobile@2x.png 2x,
+                    ./images/mobile/studio/michail-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/michail-desktop@1x.jpg"
+                  alt="Михаил Ермаков"
+                />
               </picture>
               <h3 class="list__staff-title">Михаил Ермаков</h3>
               <p lang="en" class="staff__text">UI Designer</p>
@@ -444,6 +519,7 @@
     <footer class="footer">
       <div class="container flex-container">
         <section class="footer-widget">
+          <h2 class="entry-title">Подвал</h2>
           <a href="WebStudio" class="logo"><span class="logo--accent">Web</span><span class="logo--white">Studio</span></a>
 
           <address class="address">

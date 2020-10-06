@@ -1163,6 +1163,9 @@ img {
 }
 
 .form-footer__field {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
   max-width: 450px;
   width: 100%;
   border: 1px solid rgba(190, 172, 172, 0.3);
