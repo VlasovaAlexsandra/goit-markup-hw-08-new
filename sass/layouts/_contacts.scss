@@ -2,11 +2,7 @@
     margin-left: auto;
 }
 
-.contacts {    
-    // @include for-size(tablet) {
-    //     flex-wrap: wrap;
-    // }  
-    
+.contacts {       
     @include for-size(desktop) {
         display: flex;
         align-items: baseline;

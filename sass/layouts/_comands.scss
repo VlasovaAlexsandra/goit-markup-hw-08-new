@@ -11,13 +11,11 @@
     @include for-size(tablet) {
         max-width: 354px;
         width: calc((100% - 30px * 1) / 2); 
-        margin-right: 30px; 
-        // margin-bottom: 0;
+        margin-right: 30px;
     }
 
     @include for-size(desktop) {
         max-width: 270px;
-        // margin-bottom: 0;
     }
 }
 
@@ -27,22 +25,6 @@
         flex-wrap: wrap;
     }
 }
-
-// .list.list__comands {
-//     @include for-size(mobile-only) {
-//         &:not(:last-child) {
-//             margin-bottom: 30px;
-//         }
-//     }
-// }
-
-// .list.margin-mobile {
-//     @include for-size(mobile) {
-//         &:not(:last-child) {
-//             margin-bottom: 30px;
-//         }
-//     }
-// }
 
 .list__title {
     margin-top: 0px;
@@ -67,11 +49,15 @@
     font-size: 16px;
     line-height: 1.19;    
     letter-spacing: 0.03em; 
+
+    @include for-size(desktop) {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }
 
 .staff__social-icons {
     justify-content: center;
-    // margin-bottom: 30px;
 }
 
 .social-icon {
