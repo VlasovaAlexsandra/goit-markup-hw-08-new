@@ -567,6 +567,7 @@ img {
 
 .entry-title {
   display: none;
+  margin: 0;
 }
 
 .proff__content-box:not(:last-child) {
@@ -1031,6 +1032,12 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .footer-widget:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .footer-widget:last-child {
   width: 100%;
 }
@@ -1134,10 +1141,13 @@ img {
   letter-spacing: 0.03em;
 }
 
+.addres__item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 .address__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-bottom: 8px;
 }
 
 .logo--white {
