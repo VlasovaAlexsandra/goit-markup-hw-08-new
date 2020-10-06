@@ -230,6 +230,7 @@ img {
   height: 30px;
   background-color: transparent;
   border-radius: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   outline-color: transparent;
   cursor: pointer;
 }
