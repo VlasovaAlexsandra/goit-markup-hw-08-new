@@ -33,6 +33,12 @@
   
 }
 
+.footer__item {
+  @include for-size(tablet) {
+    margin-right: 0;
+  }
+}
+
 .flex-container {
   @include for-size(tablet) {
     display: flex;

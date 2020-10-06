@@ -994,6 +994,29 @@ img {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 480px) {
+  .footer {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1005,6 +1028,12 @@ img {
 @media (min-width: 768px) {
   .footer {
     display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__item {
+    margin-right: 0;
   }
 }
 
