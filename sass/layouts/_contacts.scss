@@ -9,6 +9,7 @@
     
     @include for-size(desktop) {
         display: flex;
+        align-items: baseline;
     }  
 }
 
